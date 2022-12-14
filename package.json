@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-desktop",
+  "version": "1.0.0",
+  "description": "<!--\r HOW TO USE:\r This is an example of how you may give instructions on setting up your project locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwaku28/Portfolio-Desktop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kwaku28/Portfolio-Desktop/issues"
+  },
+  "homepage": "https://github.com/Kwaku28/Portfolio-Desktop#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}
