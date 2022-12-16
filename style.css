@@ -39,7 +39,7 @@ header {
 }
 
 .logo a span {
-  color: #00ffff;
+  color: #0ff;
 }
 
 .nav-links {
@@ -62,11 +62,6 @@ header {
   transition: transform 0.4s;
 }
 
-.nav-links a:hover {
-  color: #00ffff;
-  transform: scale(1.2);
-}
-
 .nav-links li a {
   transition: all 0.3s ease 0s;
   width: 63px;
@@ -78,6 +73,17 @@ header {
   line-height: 20px;
   color: #eee;
   text-decoration: none;
+}
+
+footer .social a {
+  font-size: 25px;
+  padding: 20px;
+  color: #505f79;
+}
+
+.nav-links a:hover {
+  color: #0ff;
+  transform: scale(1.2);
 }
 
 nav .vector {
@@ -113,24 +119,18 @@ footer .social {
   transition: all 0.3s ease 0s;
 }
 
-footer .social a {
-  font-size: 25px;
-  padding: 20px;
-  color: #505f79;
-}
-
-footer .social a:hover {
-  color: #f55800;
-}
-
 .portfolio .social a {
   font-size: 20px;
   padding-top: 10px;
   color: #eee;
 }
 
+footer .social a:hover {
+  color: #f55800;
+}
+
 .nav-links li a:hover {
-  color: #00ffff;
+  color: #0ff;
 }
 
 .portfolio {
@@ -196,7 +196,7 @@ h1 {
 }
 
 .portfolio .social a:hover {
-  color: #00ffff;
+  color: #0ff;
   transform: scale(1.2);
 }
 
@@ -339,9 +339,17 @@ main {
   transition: all 2s ease-out 0s;
 }
 
-.post .server li:hover {
+.frame .server li {
+  list-style: none;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   color: #fff;
-  background-color: #091e42;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
 }
 
 .post .server li {
@@ -354,6 +362,11 @@ main {
   font-style: normal;
   font-weight: 500;
   color: #091e42;
+}
+
+.post .server li:hover {
+  color: #fff;
+  background-color: #091e42;
 }
 
 .button {
@@ -463,19 +476,6 @@ main {
 .frame .server li:hover {
   color: black;
   background: #dfe1e6;
-}
-
-.frame .server li {
-  list-style: none;
-  text-align: center;
-  padding: 10px 5px;
-  font-size: 15px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
 }
 
 .column3 {
@@ -888,6 +888,12 @@ form #press:active {
     top: 4410px;
   }
 
+  nav .vector {
+    display: initial;
+    top: 20px;
+    right: 10%;
+  }
+
   .about-me .vector {
     width: 369px;
   }
@@ -897,7 +903,7 @@ form #press:active {
     align-items: center;
     padding-left: 120px;
   }
-  
+
   .tools > ul {
     text-align: center;
     font-size: 18px;
@@ -906,11 +912,11 @@ form #press:active {
   .rec {
     text-align: center;
   }
-  
+
   .square {
     text-align: center;
   }
-  
+
   .circle {
     text-align: center;
     padding-top: 10px;
@@ -942,18 +948,12 @@ form #press:active {
   #email {
     width: 330px;
   }
-  
+
   #type {
     width: 330px;
   }
 
   form #press {
     margin-left: 100px;
-  }
-
-  nav .vector {
-    display: initial;
-    top: 20px;
-    right: 10%;
   }
 }
