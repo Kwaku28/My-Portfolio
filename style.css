@@ -301,6 +301,12 @@ main {
   flex: none;
   order: 2;
   flex-grow: 0;
+  transition: all 2s ease-out 0s;
+}
+
+.post .server li:hover {
+  color: #fff;
+  background-color: #091e42;
 }
 
 .post .server li {
