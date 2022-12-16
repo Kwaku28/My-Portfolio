@@ -15,16 +15,13 @@ header {
   width: 100%;
   min-height: 100vh;
   background: #1c1a19;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
 }
 
 .top-nav {
   display: flex;
-  flex-wrap: nowrap;
   height: 72px;
-  padding: 0;
+  padding-left: 150px;
+  padding-right: 150px;
   align-items: center;
   justify-content: space-between;
   background: #3e3c3c;
@@ -32,22 +29,18 @@ header {
 
 .logo a {
   height: 40px;
-  width: 270px;
+  width: 20px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   color: #eee;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
   cursor: pointer;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  padding-right: 100px;
 }
 
 .nav-links li {
@@ -55,7 +48,6 @@ header {
 }
 
 .nav-links a {
-  display: flex;
   width: 30px;
   height: 20px;
   font-size: 25px;
@@ -63,6 +55,12 @@ header {
   color: #eee;
   align-items: center;
   justify-content: center;
+  transition: transform 0.4s;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
 }
 
 .nav-links li a {
@@ -86,12 +84,17 @@ footer .social {
   justify-content: center;
   font-size: 25px;
   color: rgb(145, 143, 143);
+  transition: all 0.3s ease 0s;
 }
 
 footer .social a {
   font-size: 25px;
   padding: 20px;
   color: #505f79;
+}
+
+footer .social a:hover {
+  color: #f55800;
 }
 
 .portfolio .social a {
@@ -101,45 +104,45 @@ footer .social a {
 }
 
 .nav-links li a:hover {
-  color: #0088a9;
+  color: #00ffff;
 }
 
 .portfolio {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
+  margin-top: 100px;
+  margin-left: 55px;
+}
+
+.portfolio > div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 h1 {
-  width: 300px;
+  width: 280px;
   height: 150px;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 45px;
+  line-height: 56px;
   padding-top: 30px;
   color: #f55800;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .portfolio h2 {
-  width: 380px;
+  width: 300px;
   height: 35px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
-  padding-top: 0;
-  display: flex;
-  align-items: center;
+  font-size: 25px;
   color: #fff;
   flex: none;
   order: 1;
@@ -147,17 +150,13 @@ h1 {
 }
 
 .portfolio p {
-  width: 500px;
+  width: 550px;
   height: 100px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #f4f5f7;
   flex: none;
   order: 2;
@@ -167,17 +166,23 @@ h1 {
 .portfolio .social {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-left: 20px;
+  transition: transform 0.4s;
+}
+
+.portfolio .social a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
 }
 
 .group {
   background-image: url("./images/Illustration-header.png");
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
   width: 486px;
-  height: 550px;
+  height: 500px;
+  position: absolute;
+  left: 66.5%;
+  top: 62px;
 }
 
 main {
@@ -513,7 +518,7 @@ main {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 24px;
   color: #f4f5f7;
   flex: none;
@@ -537,6 +542,8 @@ main {
   background-repeat: no-repeat;
   width: 450.27px;
   height: 350.1px;
+  position: absolute;
+  left: 66.8%;
 }
 
 footer .vector {
@@ -558,7 +565,7 @@ footer .vector {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 100px 130px 0;
+  padding: 50px 100px 100px 0;
 }
 
 .tools > ul {
@@ -712,4 +719,32 @@ form #press:hover {
 form #press:active {
   background: #e05304;
   color: #f4f1f0;
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolio {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  .portfolio .social {
+    flex-direction: row;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-top: 0;
+    margin-left: 50px;
+  }
+
+  .portfolio .social a {
+    padding: 0 10px;
+  }
 }
