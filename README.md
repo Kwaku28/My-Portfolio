@@ -189,6 +189,9 @@ Example:
 - Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
 - LinkedIn: [lawrenceamoafo](https://linkedin.com/in/lawrenceamoafo)
 
+👤 **Author2**
+- GitHub: [@rica213](https://github.com/rica213)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
