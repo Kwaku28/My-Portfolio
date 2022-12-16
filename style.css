@@ -422,6 +422,12 @@ main {
   flex: none;
   order: 2;
   flex-grow: 0;
+  transition: all 2s ease-out 0s;
+}
+
+.frame .server li:hover {
+  color: black;
+  background: #dfe1e6;
 }
 
 .frame .server li {
