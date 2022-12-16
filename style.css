@@ -38,6 +38,10 @@ header {
   cursor: pointer;
 }
 
+.logo a span {
+  color: #00ffff;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -74,6 +78,28 @@ header {
   line-height: 20px;
   color: #eee;
   text-decoration: none;
+}
+
+nav .vector {
+  width: 18px;
+  height: 10px;
+  background: #3c3a39;
+  top: 30px;
+  right: 5%;
+  z-index: 5;
+  position: absolute;
+  display: none;
+}
+
+nav .vector span {
+  display: block;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+}
+
+nav .vector span:nth-child(2) {
+  margin: 3px 0;
 }
 
 footer .social {
@@ -217,7 +243,6 @@ main {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   color: #091e42;
   flex: none;
@@ -250,6 +275,11 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: transform 0.5s;
+}
+
+#img:hover {
+  transform: scale(1.1);
 }
 
 .post {
@@ -573,7 +603,7 @@ footer .vector {
   list-style: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 20px;
   line-height: 43px;
   color: #fff;
@@ -724,15 +754,19 @@ form #press:active {
 @media screen and (max-width: 768px) {
   .top-nav {
     height: 50px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 30px;
+  }
+
+  .nav-links {
+    display: none;
   }
 
   .portfolio {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 60px;
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   .portfolio .social {
@@ -741,10 +775,185 @@ form #press:active {
     order: 1;
     flex-grow: 0;
     padding-top: 0;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .portfolio .social a {
     padding: 0 10px;
+  }
+
+  .portfolio p {
+    width: 380px;
+    line-height: 22px;
+  }
+
+  .group {
+    top: 180px;
+    left: 58%;
+    height: 400px;
+  }
+
+  .projects {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .head {
+    flex-direction: column;
+  }
+
+  .head h2 {
+    width: 320px;
+    height: 35px;
+  }
+
+  #vector {
+    width: 320px;
+    margin-top: 30px;
+  }
+
+  .header {
+    flex-direction: column;
+    padding-left: 60px;
+  }
+
+  #img {
+    width: 369px;
+    height: 237px;
+  }
+
+  .post {
+    padding-top: 20px;
+    height: 307px;
+    width: 375px;
+  }
+
+  .post p {
+    font-size: 15px;
+    width: 350px;
+  }
+
+  .post .server {
+    padding-bottom: 30px;
+    width: 207px;
+    height: 20px;
+  }
+
+  .frame {
+    grid-template-columns: 369px;
+    padding-left: 60px;
+  }
+
+  .column1 {
+    height: 396px;
+  }
+
+  .column2 {
+    height: 396px;
+  }
+
+  .column3 {
+    height: 396px;
+  }
+
+  .column4 {
+    height: 396px;
+  }
+
+  .column5 {
+    height: 396px;
+  }
+
+  .column6 {
+    height: 396px;
+  }
+
+  .frame h2 {
+    padding-top: 120px;
+  }
+
+  .about-me {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .about p {
+    font-size: 17px;
+    width: 380px;
+  }
+
+  .illustration {
+    left: 70.8%;
+    height: 200px;
+    top: 4410px;
+  }
+
+  .about-me .vector {
+    width: 369px;
+  }
+
+  .tools {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 120px;
+  }
+  
+  .tools > ul {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .rec {
+    text-align: center;
+  }
+  
+  .square {
+    text-align: center;
+  }
+  
+  .circle {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  footer {
+    padding-top: 50px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding-left: 60px;
+    padding-bottom: 10px;
+  }
+
+  .form p {
+    width: 369px;
+    height: 46px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  form {
+    width: 369px;
+    height: 420px;
+    padding-top: 80px;
+  }
+
+  #email {
+    width: 330px;
+  }
+  
+  #type {
+    width: 330px;
+  }
+
+  form #press {
+    margin-left: 100px;
+  }
+
+  nav .vector {
+    display: initial;
+    top: 20px;
+    right: 10%;
   }
 }
