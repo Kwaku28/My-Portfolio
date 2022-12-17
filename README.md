@@ -189,6 +189,9 @@ Example:
 - Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
 - LinkedIn: [lawrenceamoafo](https://linkedin.com/in/lawrenceamoafo)
 
+👤 **Author2**
+- GitHub: [@rica213](https://github.com/rica213)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -226,4 +229,4 @@ I would like to thank all Micronauts for their support
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kwaku28/Portfolio/blob/mobile-section-one/MIT.md) licensed.
+This project is [MIT](https://github.com/Kwaku28/Portfolio-Desktop/blob/main/LICENSE) licensed.
