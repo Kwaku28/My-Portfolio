@@ -139,7 +139,7 @@ footer .social a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin-left: 55px;
+  margin-left: 30px;
   padding-top: 100px;
 }
 
@@ -216,6 +216,7 @@ h1 {
 main {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .projects {
@@ -750,7 +751,7 @@ form #press:active {
   header {
     width: 100%;
   }
-  
+
   .top-nav {
     height: 50px;
     padding-left: 50px;
@@ -883,7 +884,7 @@ form #press:active {
   .illustration {
     left: 66.7%;
     height: 200px;
-    top: 4400px;
+    top: 3850px;
   }
 
   nav .vector {
@@ -953,5 +954,30 @@ form #press:active {
 
   form #press {
     margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .portfolio {
+    padding-top: 200px;
+  }
+
+  .group {
+    top: 300px;
+    width: 27%;
+  }
+
+  .illustration {
+    top: 3850px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .portfolio p {
+    width: 320px;
+  }
+
+  .group {
+    top: 350px;
   }
 }
