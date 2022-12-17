@@ -20,11 +20,13 @@ header {
 .top-nav {
   display: flex;
   height: 72px;
+  width: 100%;
   padding-left: 150px;
   padding-right: 150px;
   align-items: center;
   justify-content: space-between;
   background: #3e3c3c;
+  position: absolute;
 }
 
 .logo a {
@@ -137,8 +139,8 @@ footer .social a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin-top: 100px;
   margin-left: 55px;
+  padding-top: 100px;
 }
 
 .portfolio > div {
@@ -203,11 +205,11 @@ h1 {
 .group {
   background-image: url("./images/Illustration-header.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 486px;
-  height: 500px;
+  background-size: cover;
+  width: 38.8%;
+  height: 88%;
   position: absolute;
-  left: 66.5%;
+  left: 60.5%;
   top: 62px;
 }
 
@@ -230,9 +232,6 @@ main {
   padding: 0;
   gap: 24px;
   height: 52px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .head h2 {
@@ -401,7 +400,7 @@ main {
 
 .frame {
   display: grid;
-  grid-template-columns: 369px 369px 369px;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
   padding-top: 50px;
   gap: 24px;
@@ -514,8 +513,7 @@ main {
 .about-me {
   display: flex;
   flex-direction: column;
-  padding-top: 130px;
-  padding-left: 100px;
+  padding: 130px 100px 100px 100px;
   background: #1c1a19;
 }
 
@@ -568,9 +566,9 @@ main {
 
 .illustration {
   background-image: url("./images/illustration-about-me.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 450.27px;
+  width: 33.2%;
   height: 350.1px;
   position: absolute;
   left: 66.8%;
@@ -583,11 +581,8 @@ footer .vector {
 }
 
 .about-me .vector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 0;
-  width: 1146px;
+  width: auto;
   border: 1px solid #fff;
 }
 
@@ -595,7 +590,7 @@ footer .vector {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px 100px 0;
+  padding-top: 50px;
 }
 
 .tools > ul {
@@ -652,7 +647,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 100px;
   height: 100vh;
 }
 
@@ -752,6 +747,9 @@ form #press:active {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
   .top-nav {
     height: 50px;
     padding-left: 50px;
@@ -764,9 +762,8 @@ form #press:active {
 
   .portfolio {
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 60px;
-    margin-left: 10px;
+    align-items: center;
+    padding-top: 80px;
   }
 
   .portfolio .social {
@@ -775,7 +772,7 @@ form #press:active {
     order: 1;
     flex-grow: 0;
     padding-top: 0;
-    margin-left: 20px;
+    padding-right: 200px;
   }
 
   .portfolio .social a {
@@ -789,8 +786,9 @@ form #press:active {
 
   .group {
     top: 180px;
-    left: 58%;
-    height: 400px;
+    left: 70%;
+    height: 330px;
+    width: 28.8%;
   }
 
   .projects {
@@ -814,7 +812,7 @@ form #press:active {
 
   .header {
     flex-direction: column;
-    padding-left: 60px;
+    align-items: center;
   }
 
   #img {
@@ -841,7 +839,7 @@ form #press:active {
 
   .frame {
     grid-template-columns: 369px;
-    padding-left: 60px;
+    justify-content: center;
   }
 
   .column1 {
@@ -873,8 +871,7 @@ form #press:active {
   }
 
   .about-me {
-    padding-left: 60px;
-    padding-right: 60px;
+    align-items: center;
   }
 
   .about p {
@@ -883,9 +880,9 @@ form #press:active {
   }
 
   .illustration {
-    left: 70.8%;
+    left: 66.7%;
     height: 200px;
-    top: 4410px;
+    top: 4400px;
   }
 
   nav .vector {
@@ -896,12 +893,12 @@ form #press:active {
 
   .about-me .vector {
     width: 369px;
+    margin-top: 30px;
   }
 
   .tools {
     flex-direction: column;
     align-items: center;
-    padding-left: 120px;
   }
 
   .tools > ul {
@@ -928,7 +925,7 @@ form #press:active {
 
   .form {
     flex-direction: column;
-    padding-left: 60px;
+    align-items: center;
     padding-bottom: 10px;
   }
 
