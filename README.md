@@ -86,7 +86,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [My_Portfolio](http://127.0.0.1:5501/index.html)
+- [My_Portfolio](https://kwaku28.github.io/My-Portfolio/)
 
 <!-- GETTING STARTED -->
 
