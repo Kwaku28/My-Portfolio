@@ -771,7 +771,7 @@ form #press:active {
   .nav-links.active {
     left: 0;
   }
-  
+
   .nav-links > a {
     display: none;
   }
@@ -928,11 +928,11 @@ form #press:active {
   .vectors.active span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .vectors.active span:nth-child(1) {
     transform: translateY(2px) rotate(45deg);
   }
-  
+
   .vectors.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
