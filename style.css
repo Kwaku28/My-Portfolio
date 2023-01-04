@@ -88,7 +88,7 @@ footer .social a {
   transform: scale(1.2);
 }
 
-nav .vector {
+.vectors {
   width: 18px;
   height: 10px;
   background: #3c3a39;
@@ -99,21 +99,18 @@ nav .vector {
   display: none;
 }
 
-nav .vector span {
+.vectors span {
   display: block;
   width: 100%;
   background: #fff;
   height: 2px;
-}
-
-nav .vector span:nth-child(2) {
   margin: 3px 0;
 }
 
 footer .social {
   width: 100%;
   height: 25px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
@@ -759,6 +756,39 @@ form #press:active {
   }
 
   .nav-links {
+    flex-direction: column;
+    width: 100%;
+    background-color: #1c1a19;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 100%;
+    height: 550px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .nav-links li a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff5e1;
+    margin-top: 50px;
+  }
+
+  .nav-links > a {
     display: none;
   }
 
@@ -887,10 +917,21 @@ form #press:active {
     top: 3850px;
   }
 
-  nav .vector {
-    display: initial;
+  .vectors {
+    display: block;
     top: 20px;
     right: 10%;
+    cursor: pointer;
+  }
+
+  .vectors.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .vectors.active span:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+  }
+  .vectors.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .about-me .vector {
