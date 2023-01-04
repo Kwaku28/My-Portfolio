@@ -5,3 +5,9 @@ vectors.addEventListener("click", () => {
   vectors.classList.toggle("active");
   navLink.classList.toggle("active");
 });
+
+document.querySelectorAll('ul.navlinks > li').forEach(n => n.addEventListener('click', () => {
+    vectors.classList.remove('active');
+    navLink.classList.remove('active');
+  }))
+  
