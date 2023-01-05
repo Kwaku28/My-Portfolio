@@ -768,7 +768,7 @@ form #press:active {
     z-index: 4;
     background: #3c3a39;
     mix-blend-mode: normal;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
   .nav-links.active {
