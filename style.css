@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,14 @@ header {
   justify-content: space-between;
   background: #3e3c3c;
   position: absolute;
+}
+
+.vectors span {
+  display: block;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  margin: 3px 0;
 }
 
 .logo a {
@@ -88,7 +97,7 @@ footer .social a {
   transform: scale(1.2);
 }
 
-nav .vector {
+.vectors {
   width: 18px;
   height: 10px;
   background: #3c3a39;
@@ -99,21 +108,10 @@ nav .vector {
   display: none;
 }
 
-nav .vector span {
-  display: block;
-  width: 100%;
-  background: #fff;
-  height: 2px;
-}
-
-nav .vector span:nth-child(2) {
-  margin: 3px 0;
-}
-
 footer .social {
   width: 100%;
   height: 25px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 25px;
@@ -759,7 +757,45 @@ form #press:active {
   }
 
   .nav-links {
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 4;
+    background: #3c3a39;
+    mix-blend-mode: normal;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links > a {
     display: none;
+  }
+
+  .nav-links li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 10px 30px;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .nav-links li a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff5e1;
+    margin-top: 50px;
   }
 
   .portfolio {
@@ -887,10 +923,29 @@ form #press:active {
     top: 3850px;
   }
 
-  nav .vector {
-    display: initial;
+  .vectors {
+    display: block;
     top: 20px;
     right: 10%;
+    cursor: pointer;
+  }
+
+  .vectors.active {
+    position: fixed;
+  }
+
+  .vectors.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .vectors.active span:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+    top: auto;
+  }
+
+  .vectors.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    top: auto;
   }
 
   .about-me .vector {
@@ -941,7 +996,7 @@ form #press:active {
   form {
     width: 369px;
     height: 420px;
-    padding-top: 80px;
+    padding-top: 110px;
   }
 
   #email {
