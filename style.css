@@ -639,6 +639,57 @@ main {
   transition: transform 0.5s;
 }
 
+.model-img1 {
+  background-image: url("./images/Illustration-prject1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  padding-right: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: transform 0.5s;
+}
+
+.model-img2 {
+  background-image: url("./images/Illustration-prject2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  padding-right: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: transform 0.5s;
+}
+.model-img3 {
+  background-image: url("./images/Illustration-prject3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  padding-right: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: transform 0.5s;
+}
+
+.model-img4 {
+  background-image: url("./images/Illustration-prject4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 400px;
+  padding-right: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: transform 0.5s;
+}
+
 .model-content {
   display: flex;
   flex-direction: column;
