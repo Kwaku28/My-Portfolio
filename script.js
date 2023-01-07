@@ -12,6 +12,7 @@ document.querySelectorAll('ul.nav-links > li').forEach((n) => n
     navLink.classList.remove('active');
   }));
 
+// Popup Window
 const openModelButtons = document.querySelectorAll('[data-model-target]');
 const closeModelButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -65,6 +66,6 @@ form.addEventListener('submit', (event) => {
     error.innerHTML = '';
   } else {
     event.preventDefault();
-    error.innerHTML = 'Oh dear! Please Change Your E_mail to lower case! ☺️☺️';
+    error.innerHTML = 'oops! Email should be in lower case!';
   }
 });
