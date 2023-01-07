@@ -30,31 +30,6 @@ header {
   position: absolute;
 }
 
-.model-img5 {
-  background-image: url("./images/Illustration-prject2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-.model-img6 {
-  background-image: url("./images/Illustration-prject3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-
 .vectors span {
   display: block;
   width: 100%;
@@ -652,66 +627,8 @@ main {
 }
 
 .model-img {
-  background-image: url("./images/Snapshoot-Portfolio.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
+  width: 100%;
   height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-
-.model-img1 {
-  background-image: url("./images/Illustration-prject1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-
-.model-img2 {
-  background-image: url("./images/Illustration-prject2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-.model-img3 {
-  background-image: url("./images/Illustration-prject3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: transform 0.5s;
-}
-
-.model-img4 {
-  background-image: url("./images/Illustration-prject4.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  padding-right: 0;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   transition: transform 0.5s;
 }
 
@@ -1166,7 +1083,7 @@ form #press:active {
   }
 
   .model-img {
-    width: 400px;
+    width: 100%;
     height: 180px;
   }
 
