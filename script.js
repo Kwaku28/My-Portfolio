@@ -48,3 +48,23 @@ function closeModel(model) {
   model.classList.remove('active');
   overlay.classList.remove('active');
 }
+
+// Form Validation
+const email = document.querySelector('#E_mail');
+const error = document.querySelector('#Feed_back');
+const form = document.querySelector('#Form');
+const emailValidation = (input) => {
+  if (input === input.toLowerCase()) {
+    return true;
+  }
+  return false;
+};
+form.addEventListener('submit', (event) => {
+  error.innerHTML = '';
+  if (emailValidation(email.value)) {
+    error.innerHTML = '';
+  } else {
+    event.preventDefault();
+    error.innerHTML = 'Oh dear! Please Change Your E_mail to lower case! ☺️☺️';
+  }
+});
