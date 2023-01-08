@@ -28,7 +28,7 @@ function closeModel(model) {
   overlay.classList.remove('active');
 }
 
-openModelButtons.forEach(button => {
+openModelButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const model = document.querySelector(button.dataset.modelTarget);
     openModel(model);
@@ -36,13 +36,13 @@ openModelButtons.forEach(button => {
 });
 
 overlay.addEventListener('click', () => {
-  const models = document.querySelectorAll('.model.active')
-  models.forEach(model => {
+  const models = document.querySelectorAll('.model.active');
+  models.forEach((model) => {
     closeModel(model);
   });
 });
 
-closeModelButtons.forEach(button => {
+closeModelButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const model = button.closest('.model');
     closeModel(model);
