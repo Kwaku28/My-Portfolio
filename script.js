@@ -17,26 +17,26 @@ const openModelButtons = document.querySelectorAll('[data-model-target]');
 const closeModelButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-openModelButtons.forEach(button => {
+openModelButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const model = document.querySelector(button.dataset.modelTarget);
     openModel(model);
-  })
-})
+  });
+});
 
 overlay.addEventListener('click', () => {
   const models = document.querySelectorAll('.model.active')
-  models.forEach(model => {
+  models.forEach((model) => {
     closeModel(model);
-  })
-})
+  });
+});
 
-closeModelButtons.forEach(button => {
+closeModelButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const model = button.closest('.model');
     closeModel(model);
-  })
-})
+  });
+});
 
 function openModel(model) {
   if (model == null) return;
